@@ -1,0 +1,21 @@
+﻿
+@model IndexModel
+
+<h2>API URL</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="apiUrl">API URL:</label>
+        <input type="text" id="apiUrl" name="apiUrl" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+@if (Model != null)
+{
+    <div class="mt-4">
+        <h2>API Response:</h2>
+        <label>@Model.Content</label>
+    </div>
+    
+}
